@@ -1,0 +1,20 @@
+-- Create a clothing store database
+CREATE TABLE store (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, weight REAL, barcode INTEGER);
+INSERT INTO store VALUES (1, "red shirt", 5, 1, 111);
+INSERT INTO store VALUES (2, "blue shirt", 5, 1, 112);
+INSERT INTO store VALUES (3, "green shirt", 6, 1, 113);
+INSERT INTO store VALUES (4, "yellow shirt", 7, 1, 114);
+INSERT INTO store VALUES (5, "red pants", 9, 6, 115);
+INSERT INTO store VALUES (6, "blue pants", 10, 6, 116);
+INSERT INTO store VALUES (7, "green pants", 10, 6, 117);
+INSERT INTO store VALUES (8, "yellow pants", 11, 6, 118);
+INSERT INTO store VALUES (9, "red shoes", 20, 7, 119);
+INSERT INTO store VALUES (10, "blue shoes", 21, 7, 120);
+INSERT INTO store VALUES (11, "green shoes", 22, 7, 121);
+INSERT INTO store VALUES (12, "yellow shoes", 24, 7, 122);
+INSERT INTO store VALUES (13, "red hat", 2, 2, 123);
+INSERT INTO store VALUES (14, "yellow hat", 3, 2, 124);
+INSERT INTO store VALUES (15, "blue hat", 2, 2, 125);
+
+--display the database of items that weight more than 5 ordered by price
+SELECT * FROM store WHERE weight >5 ORDER BY price asc ;
